@@ -5,9 +5,149 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+    135deg,
+    #00bcd4 0%,
+    #2196f3 33%,
+    #3f51b5 66%,
+    #673ab7 100%
+  );
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Estilos generales */
+body {
+  background: linear-gradient(to bottom, #26c6da, #00acc1); /* Degradado de colores */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input[type='text'] {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  outline: none;
+}
+
+button[type='submit'] {
+  padding: 8px;
+  background-color: #26c6da;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+button {
+  padding: 5px;
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos para el formulario de modificación de tarea */
+.form-modificar {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.form-modificar input[type='text'] {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  outline: none;
+}
+
+.form-modificar button[type='submit'] {
+  padding: 8px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-modificar button[type='button'] {
+  padding: 8px;
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos para los botones de la aplicación */
+/* Estilo para los botones */
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* Estilo para el botón de eliminar */
+.btn-delete {
+  background-color: #dc3545;
+}
+
+/* Estilo para el botón de modificar */
+.btn-modify {
+  background-color: #ffc107;
+}
+
+/* Estilo de hover para los botones */
+.btn:hover {
+  opacity: 0.8;
 }
